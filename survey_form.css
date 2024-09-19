@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the content to the top of the page */
+  height: 100vh;
+  padding-top: 20px; /* Add space from the top */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  text-align: center;
+  color: #444;
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+#survey-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#survey-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+  border-color: #45a049;
+  outline: none;
+  background-color: #f5fff7;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3d8e40;
+  transform: translateY(-3px);
+}
+
+/* Unique styling */
+#title {
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#description {
+  margin-bottom: 35px;
+  color: #555;
+  font-style: italic;
+}
+
+#submit {
+  margin-top: 25px;
+}
+
+#dropdown {
+  margin-top: 20px; /* Add space between the label and the dropdown */
+}
+
+label[for="dropdown"] {
+  margin-top: 30px; /* Add more gap between the label and the previous section */
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #survey-form {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
